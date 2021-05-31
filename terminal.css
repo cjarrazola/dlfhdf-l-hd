@@ -54,6 +54,25 @@ html, body {
   font-family: 'Share Tech Mono', monospace;
 }
 
+/* --== Add CRT effect ==-- */
+html,body::before, .theme-dark .perksModal-fSYqOq::before,
+.standardSidebarView-3F1I7i::before, .userPopout-3XzG_A::before,
+.inner-1ilYF7::before, .container-1CE3eW::before, .resultsGroup-r_nuzN::before,
+.theme-dark .root-1gCeng::after, .container-1r6BKw.themed-ANHk51::after,
+.drawerSizingWrapper-17Mss4::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%), linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+
 /* --== Make sure everything's still clickable ==-- */
 body *, .userPopout-3XzG_A * {
   pointer-events: auto;
